@@ -1,0 +1,13 @@
+@use '../custom' as *;
+#topheader{
+    padding: 0px; 
+}
+.nav-link{
+    font-weight: 500!important;
+    margin: 0 0.6rem;
+    @include media-breakpoint-down(md){
+        margin: 0 0.2rem;
+    }
+}
+
+

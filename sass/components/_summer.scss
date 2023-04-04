@@ -1,0 +1,22 @@
+@use '../custom' as *;
+.summer-image{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+}
+.summercontent{
+    top: 20%;
+    right:5%;
+    padding: 3rem;
+    @include media-breakpoint-down(md){
+        top: 40%;
+        right:5%;
+        padding: 2rem;
+    }
+    @include media-breakpoint-down(sm){
+        top: 25%;
+        right:5%;
+        padding: 0.5rem;
+    }
+}

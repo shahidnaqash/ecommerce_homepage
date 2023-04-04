@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.icons-link{
+    margin: 0 0.2rem;
+    @include media-breakpoint-down(lg){
+        margin: 0 0.8rem;
+    }
+}
+.flexEnd{
+    @include flexEnd;
+}
+.cartNumber{  
+   text-align: center;
+    width: 20px!important;
+    height: auto;
+    min-width: 20px!important;
+    min-height: 20px!important;
+
+}

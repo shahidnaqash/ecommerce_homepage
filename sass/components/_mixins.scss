@@ -1,0 +1,7 @@
+@use '../custom' as *;
+
+@mixin flexEnd {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

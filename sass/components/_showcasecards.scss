@@ -1,0 +1,49 @@
+@use '../custom' as *;
+
+.card_description {
+    a {
+        text-decoration: none;
+    }
+
+    padding: 0.8rem 0;
+}
+
+
+.card_product {
+    border: 1px solid gray;
+    .addtocart {
+        bottom: 0%;
+        opacity: 0;
+        visibility: hidden;
+        right: 0%;
+        left: 0%;
+        transition: opacity 600ms, visibility 600ms;
+
+        @include media-breakpoint-down(md) {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .card_image{
+        overflow: hidden;
+        img{
+            transform:scale(1);
+            transition: transform 600ms;
+        }
+    }
+
+    &:hover {
+
+        .addtocart {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .card_image img{
+            transform: scale(1.2);
+        }
+    }
+}
+#card_product:hover{
+    box-shadow: 5px 10px 18px #888888;
+}
